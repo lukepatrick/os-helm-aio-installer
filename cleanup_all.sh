@@ -7,7 +7,7 @@ source ~/os-helm-aio-installer/os-helm-cleanup.sh
 helm delete --purge dashboard
 
 # Remove Weave
-kubectl delete --namespace kube-system -f ~/charter_scripts/scope.yaml
+kubectl delete --namespace kube-system -f scope.yaml
 
 # Remove previous Helm deployments (client-side):
 rm -rf ~/.helm
